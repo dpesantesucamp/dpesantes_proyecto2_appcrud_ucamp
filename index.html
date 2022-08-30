@@ -40,26 +40,45 @@
         <p>Don Chifle es un snack de MAQUEÑO, rebanado en rodajas, delicadamente frito, saborizado y empacado en fundas
             de polipropileno biorientado laminado, especial para alimentos, de diferente presentación.</p>
         <a class="btn btn-primary btn-lg" href="#" role="button">Leer más</a>
-        <!--Formulario-->
-        <div class="formulario">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Correo</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">Nosotros no compartimos tu correo con
-                        nadie.</small>
+        <!--Formulario CRUD-->
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-sm-12">
+                    <form>
+                        <div class="form-group">
+                            <label>Pelicula</label>
+                            <input type="text" class="form-control" id="txtPelicula">
+    
+                        </div>
+                        <button onclick="guardar()" class="btn btn-primary btn-block" type="button">Guardar</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12">
+                    <h3>Lista de peliculas</h3>
+                    <table class="table table-bordered" aria-describedby="peliculas">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Pelicula</th>
+                                <th width="40%">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tblPeliculas">
+                            <!-- <tr class="text-center font-weight-bold">
+                                <td colspan="2">NO HAY REGISTROS</td>
+                            </tr>
+                            <tr>
+                                <td>Pelicula 1</td>
+                                <td class="text-center">
+                                    <button class="btn btn-warning">Editar</button>
+                                    <button class="btn btn-danger">Eliminar</button>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
                 </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Ingresar</button>
-            </form>
-        </div>
+            </div>
     </div>
     <!--Catalogo-->
     <div class="container-fluid">
@@ -128,5 +147,5 @@
         </div>
     </footer>
 </body>
-
+<script src="assets/js/main.js"></script>
 </html>
