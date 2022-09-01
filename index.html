@@ -46,9 +46,21 @@
                 <div class="col-sm-12">
                     <form>
                         <div class="form-group">
-                            <label>Pelicula</label>
-                            <input type="text" class="form-control" id="txtPelicula">
-    
+                            <h1>Carga de Productos</h1>
+                            <table>
+                                <tr>
+                                    <td>Producto</td>
+                                    <td width="70%" class="ml-2"><input type="text" id="txtProducto"></td><br>
+                                </tr>
+                                <tr class="ml-2">
+                                    <td>Cantidad</td>
+                                    <td width="40%" class="ml-2"><input type="text" id="txtCantidad"></td><br>
+                                </tr>
+                                <tr class="ml-2">
+                                    <td>Precio</td>
+                                    <td width="40%" class="ml-2"><input type="text" id="txtPrecio"></td>
+                                </tr>
+                            </table>
                         </div>
                         <button onclick="guardar()" class="btn btn-primary btn-block" type="button">Guardar</button>
                     </form>
@@ -56,15 +68,17 @@
             </div>
             <div class="row mt-5">
                 <div class="col-sm-12">
-                    <h3>Lista de peliculas</h3>
-                    <table class="table table-bordered" aria-describedby="peliculas">
+                    <h3>Lista de productos</h3>
+                    <table class="table table-bordered" aria-describedby="productos">
                         <thead class="thead-dark">
                             <tr>
-                                <th>Pelicula</th>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
                                 <th width="40%">Acciones</th>
                             </tr>
                         </thead>
-                        <tbody id="tblPeliculas">
+                        <tbody id="tblProductos">
                             <!-- <tr class="text-center font-weight-bold">
                                 <td colspan="2">NO HAY REGISTROS</td>
                             </tr>
